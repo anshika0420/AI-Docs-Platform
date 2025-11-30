@@ -1,17 +1,3 @@
-I understand — GitHub is rendering your README badly because **you pasted the content from ChatGPT with code block “```markdown” and extra symbols / formatting that GitHub doesn’t support properly**.
-
-I’ll fix it.
-
-Below is a **clean, perfect, professional README that will render beautifully on GitHub** — **NO weird formatting, NO collapsible blocks, NO indents broken, NO chat markup**.
-
----
-
-### 📌 COPY-PASTE BELOW EXACTLY INTO `README.md`
-
-(Do NOT wrap this inside triple backticks)
-
----
-
 # 🚀 AI-Assisted Document Authoring & Generation Platform
 
 A full-stack AI-powered platform to generate, refine, and export **Word (.docx)** and **PowerPoint (.pptx)** documents with ZERO manual formatting.
@@ -37,7 +23,7 @@ A full-stack AI-powered platform to generate, refine, and export **Word (.docx)*
 
 ### 🔹 Login
 
-<img src="screenshots/login.png" width="700"/>
+<img src="login.png" width="700"/>
 
 ### 🔹 Dashboard
 
@@ -196,9 +182,3 @@ git push
 ```
 
 ---
-
-If you want:
-✔ badges
-✔ deployment guide
-✔ video preview GIF
-I will add them too. Just say **yes**.
