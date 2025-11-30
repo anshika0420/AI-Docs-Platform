@@ -1,24 +1,69 @@
-# AI-Assisted Document Authoring and Generation Platform
+Understood — here is the **complete READY-TO-COPY README.md code** exactly as you asked 👇
+(No explanation — only the code.)
 
-This is a full-stack implementation of the assignment:
+---
 
-> AI-Assisted Document Authoring and Generation Platform
+```markdown
+# 🧠 AI-Assisted Document Authoring & Generation Platform
 
-## Tech Stack
+A full-stack **AI Docs Platform** that allows users to create, refine, and export **Word (.docx)** and **PowerPoint (.pptx)** documents using AI.
 
-- **Backend:** FastAPI, SQLAlchemy, JWT auth, python-docx, python-pptx
-- **Frontend:** React (Create React App style), react-router-dom, axios
-- **DB:** SQLite (file-based, easy to run)
-- **LLM Integration:** Real APIs via environment variables
-  - Supports `OPENAI` or `GEMINI` via `.env`
+---
 
-## Folder Structure
+## 🚀 Features
+
+| Category | Capability |
+|---------|-------------|
+| Authentication | JWT Login / Register |
+| Document Types | `.docx` & `.pptx` |
+| AI Content | Generates section/slide text using OpenAI or Gemini |
+| Refinement | Modify text via natural-language instructions |
+| Feedback | Likes, dislikes & comments per section |
+| Export | Download final DOCX / PPTX |
+| Storage | SQLite (file-based) |
+
+---
+
+## 🖼 UI Screenshots
+
+### 🔐 Login
+![Login](login.png)
+
+### 🏠 Dashboard
+![Dashboard](dashboard.png)
+
+### ➕ Create Project
+![Create Project](create_project.png)
+
+### ✍️ Editor
+![Editor](editor.png)
+
+### 📤 Export DOCX / PPTX
+![Export](export.png)
+
+---
+
+## 🧱 Tech Stack
 
 ```
+
+Backend → FastAPI, SQLAlchemy, JWT, python-docx, python-pptx
+Frontend → React, react-router-dom, axios
+Database → SQLite
+AI Models → OpenAI / Gemini / Mock mode
+
+```
+
+---
+
+## 📂 Folder Structure
+
+```
+
 ai-docs-platform/
 ├── backend/
 │   ├── app/
-│   │   ├── __init__.py
+│   │   ├── **init**.py
 │   │   ├── main.py
 │   │   ├── database.py
 │   │   ├── models.py
@@ -28,7 +73,7 @@ ai-docs-platform/
 │   │   ├── llm_client.py
 │   │   ├── generator.py
 │   │   └── routers/
-│   │       ├── __init__.py
+│   │       ├── **init**.py
 │   │       ├── auth_router.py
 │   │       ├── projects_router.py
 │   │       └── export_router.py
@@ -48,46 +93,54 @@ ai-docs-platform/
 │           ├── Dashboard.js
 │           ├── ConfigureProject.js
 │           └── Editor.js
+├── login.png
+├── dashboard.png
+├── create_project.png
+├── editor.png
+├── export.png
 └── .env.example
-```
 
-## 1. Backend Setup
+````
+
+---
+
+## ⚙️ Backend Setup
 
 ```bash
 cd backend
 python -m venv venv
-# Windows: venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
+# Windows
+venv\Scripts\activate
+# macOS / Linux
+# source venv/bin/activate
 pip install -r requirements.txt
+````
+
+Create a `.env` in `/backend` (based on `.env.example`):
+
+```
+SECRET_KEY=your_random_string
+DATABASE_URL=sqlite:///./app.db
+LLM_PROVIDER=openai   # openai | gemini | mock
+
+# For OpenAI
+OPENAI_API_KEY=your_openai_key
+
+# For Gemini
+GEMINI_API_KEY=your_gemini_key
 ```
 
-Create a `.env` file in `backend/` based on `.env.example` from the project root:
-
-```bash
-cp ../.env.example .env
-```
-
-Edit `.env`:
-
-- `SECRET_KEY` → any long random string
-- `DATABASE_URL` → leave default for SQLite
-- `LLM_PROVIDER` → `openai` or `gemini` or `mock`
-- For OpenAI:
-  - `OPENAI_API_KEY=<your key>`
-- For Gemini:
-  - `GEMINI_API_KEY=<your key>`
-
-Then run the backend:
+Run backend:
 
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
 
-API docs: open http://localhost:8000/docs in your browser.
+API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## 2. Frontend Setup
+---
+
+## 🌐 Frontend Setup
 
 ```bash
 cd frontend
@@ -95,26 +148,54 @@ npm install
 npm start
 ```
 
-The app will run at http://localhost:3000
+Frontend starts at → [http://localhost:3000](http://localhost:3000)
 
-## 3. Basic Flow
+---
 
-1. Register a user (from Login page: click "Register" toggle).
-2. Login → token is stored in browser localStorage.
-3. Create a new project:
-   - Choose document type: `.docx` or `.pptx`
-   - Set title and topic
-   - Add section titles (for `.docx`) or slide titles (for `.pptx`)
-4. Click "Generate with AI" to generate section/slide content via LLM.
-5. Open a project in Editor:
-   - View each section
-   - Refine using instruction textbox per section
-   - Like/Dislike
-   - Add comments
-6. Click "Export DOCX" or "Export PPTX" to download the assembled file.
+## 🔄 Usage Flow
 
-## 4. Notes
+1️⃣ Register or Login
+2️⃣ Create New Project
+3️⃣ Set title, topic & document type (.docx or .pptx)
+4️⃣ Add section/slide titles
+5️⃣ Click **Generate with AI**
+6️⃣ Open project → refine, like/dislike, comment
+7️⃣ Export **DOCX/PPTX**
 
-- All data (users, projects, sections) is stored in SQLite (`app.db` by default).
-- LLM calls are abstracted in `llm_client.py` — you can swap providers by env var.
-- If you don't want to spend API, set `LLM_PROVIDER=mock` and it will generate placeholder text.
+---
+
+## 📝 Notes
+
+* All user & document data stored in SQLite → `backend/app.db`
+* AI provider switching is controlled via `.env`
+* Development without API cost:
+
+  ```
+  LLM_PROVIDER=mock
+  ```
+
+---
+
+## 🔮 Future Enhancements (Optional)
+
+* AI-generated images inside PPT slides
+* Collaboration (multi-user editing)
+* Document themes / templates
+
+---
+
+## 👤 Author
+
+Developed by **Anshika Srivastava**
+⭐ If this project inspires you, please **star the repository!**
+
+```
+
+---
+
+If you want, I can also add:
+✔ badges (OpenAI / Gemini / FastAPI / React / License)  
+✔ deployment instructions (Render / Railway / Vercel)  
+
+Just tell me and I’ll update it. 🚀
+```
