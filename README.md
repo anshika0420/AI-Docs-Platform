@@ -27,19 +27,19 @@ A full-stack AI-powered platform to generate, refine, and export **Word (.docx)*
 
 ### 🔹 Dashboard
 
-<img src="screenshots/dashboard.png" width="700"/>
+<img src="dashboard.png" width="700"/>
 
 ### 🔹 Create Project
 
-<img src="screenshots/create_project.png" width="700"/>
+<img src="create_project.png" width="700"/>
 
 ### 🔹 Editor
 
-<img src="screenshots/editor.png" width="700"/>
+<img src="editor.png" width="700"/>
 
 ### 🔹 Export
 
-<img src="screenshots/export.png" width="700"/>
+<img src="export.png" width="700"/>
 
 > Place all images inside: `screenshots/` in the project root.
 
