@@ -86,7 +86,7 @@ ai-docs-platform/
 
 ---
 
-## ⚙️ Backend Setup
+##  Backend Setup
 
 ```
 cd backend
@@ -119,7 +119,7 @@ API docs → [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
-## 🖥 Frontend Setup
+##  Frontend Setup
 
 ```
 cd frontend
@@ -159,7 +159,7 @@ Contributions, issues, and feature requests are welcome.
 
 ---
 
-## 🛡 License
+##  License
 
 MIT License
 
