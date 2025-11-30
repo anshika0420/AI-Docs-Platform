@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+requests
+python-docx
+python-pptx
+aiofiles
+typing-extensions
