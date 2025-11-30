@@ -1,25 +1,25 @@
-# 🚀 AI-Assisted Document Authoring & Generation Platform
+#  AI-Assisted Document Authoring & Generation Platform
 
 A full-stack AI-powered platform to generate, refine, and export **Word (.docx)** and **PowerPoint (.pptx)** documents with ZERO manual formatting.
 
 ---
 
-## ✨ Features
+##  Features
 
 | Category             | Capability                                                 |
 | -------------------- | ---------------------------------------------------------- |
-| 🚪 Authentication    | Login / Register                                           |
-| 📄 Document Types    | Word (.docx) / PowerPoint (.pptx)                          |
-| 🧠 AI Content        | Auto-generates section/slide content using OpenAI / Gemini |
-| 🔁 Feedback Loop     | Like / dislike & comments per section                      |
-| 📝 Refinement        | Rewrite content using AI with custom instructions          |
-| ⬇ Export             | DOCX & PPTX                                                |
-| 🗂 Project Workspace | Create / edit / delete projects                            |
-| 💾 Local Database    | SQLite storage                                             |
+|  Authentication    | Login / Register                                           |
+|  Document Types    | Word (.docx) / PowerPoint (.pptx)                          |
+|  AI Content        | Auto-generates section/slide content using OpenAI / Gemini |
+|  Feedback Loop     | Like / dislike & comments per section                      |
+|  Refinement        | Rewrite content using AI with custom instructions          |
+|  Export             | DOCX & PPTX                                                |
+|  Project Workspace | Create / edit / delete projects                            |
+|  Local Database    | SQLite storage                                             |
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### 🔹 Login
 
@@ -45,7 +45,7 @@ A full-stack AI-powered platform to generate, refine, and export **Word (.docx)*
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 **Backend:** FastAPI, SQLAlchemy, JWT, python-docx, python-pptx
 **Frontend:** React, Axios, React Router
@@ -54,7 +54,7 @@ A full-stack AI-powered platform to generate, refine, and export **Word (.docx)*
 
 ---
 
-## 📂 Project Folder Structure
+##  Project Folder Structure
 
 ```
 ai-docs-platform/
@@ -131,7 +131,7 @@ Runs on → [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔄 Usage Flow
+##  Usage Flow
 
 1️⃣ Register → login
 2️⃣ Create a project (DOCX or PPTX)
@@ -143,7 +143,7 @@ Runs on → [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🛠 Deployment
+##  Deployment
 
 | Component | Recommended            |
 | --------- | ---------------------- |
@@ -153,7 +153,7 @@ Runs on → [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests are welcome.
 
@@ -165,7 +165,7 @@ MIT License
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 Made with ❤️ by **Anshika Srivastava**
 
