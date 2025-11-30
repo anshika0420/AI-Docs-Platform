@@ -1,12 +1,12 @@
-Understood — here is the **complete READY-TO-COPY README.md code** exactly as you asked 👇
-(No explanation — only the code.)
+Below is a **complete README.md — final polished version — ONLY THE CODE**
+(you can copy–paste directly into your GitHub README).
 
 ---
 
 ```markdown
 # 🧠 AI-Assisted Document Authoring & Generation Platform
 
-A full-stack **AI Docs Platform** that allows users to create, refine, and export **Word (.docx)** and **PowerPoint (.pptx)** documents using AI.
+A full-stack AI-powered platform to generate, refine, and export **Word (.docx)** and **PowerPoint (.pptx)** documents using natural language.
 
 ---
 
@@ -16,15 +16,16 @@ A full-stack **AI Docs Platform** that allows users to create, refine, and expor
 |---------|-------------|
 | Authentication | JWT Login / Register |
 | Document Types | `.docx` & `.pptx` |
-| AI Content | Generates section/slide text using OpenAI or Gemini |
-| Refinement | Modify text via natural-language instructions |
-| Feedback | Likes, dislikes & comments per section |
-| Export | Download final DOCX / PPTX |
+| AI Text Generation | Creates section/slide content using OpenAI / Gemini |
+| Refinement | Users can add custom rewrite instructions |
+| Feedback | Like / Dislike & comments per section |
+| Export | Download DOCX & PPTX |
 | Storage | SQLite (file-based) |
+| UX | Clean dashboard, editor & project workspace |
 
 ---
 
-## 🖼 UI Screenshots
+## 🖥️ Screenshots
 
 ### 🔐 Login
 ![Login](login.png)
@@ -32,13 +33,13 @@ A full-stack **AI Docs Platform** that allows users to create, refine, and expor
 ### 🏠 Dashboard
 ![Dashboard](dashboard.png)
 
-### ➕ Create Project
+### 📝 Create Project
 ![Create Project](create_project.png)
 
-### ✍️ Editor
+### ✍️ Document Editor
 ![Editor](editor.png)
 
-### 📤 Export DOCX / PPTX
+### 📤 Export
 ![Export](export.png)
 
 ---
@@ -56,7 +57,7 @@ AI Models → OpenAI / Gemini / Mock mode
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Folder Structure
 
 ```
 
@@ -113,30 +114,31 @@ python -m venv venv
 venv\Scripts\activate
 # macOS / Linux
 # source venv/bin/activate
+
 pip install -r requirements.txt
 ````
 
-Create a `.env` in `/backend` (based on `.env.example`):
+Create a `.env` file in `backend/` using the example template:
 
 ```
 SECRET_KEY=your_random_string
 DATABASE_URL=sqlite:///./app.db
-LLM_PROVIDER=openai   # openai | gemini | mock
+LLM_PROVIDER=openai       # openai | gemini | mock
 
 # For OpenAI
-OPENAI_API_KEY=your_openai_key
+OPENAI_API_KEY=your_openai_api_key
 
 # For Gemini
-GEMINI_API_KEY=your_gemini_key
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Run backend:
+Run the backend:
 
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
 
-API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+API Docs → [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
@@ -148,54 +150,61 @@ npm install
 npm start
 ```
 
-Frontend starts at → [http://localhost:3000](http://localhost:3000)
+Frontend runs at → [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔄 Usage Flow
+## 🔄 Basic Usage Flow
 
-1️⃣ Register or Login
-2️⃣ Create New Project
-3️⃣ Set title, topic & document type (.docx or .pptx)
-4️⃣ Add section/slide titles
-5️⃣ Click **Generate with AI**
-6️⃣ Open project → refine, like/dislike, comment
-7️⃣ Export **DOCX/PPTX**
+1️⃣ Register new user / Login
+2️⃣ Create new project
+3️⃣ Enter title + topic
+4️⃣ Choose document type → `.docx` / `.pptx`
+5️⃣ Add section / slide titles
+6️⃣ Click **Generate with AI**
+7️⃣ Refine content inside Editor (optional)
+8️⃣ Like / dislike / comment (optional)
+9️⃣ Export the polished DOCX / PPTX
 
 ---
 
 ## 📝 Notes
 
-* All user & document data stored in SQLite → `backend/app.db`
-* AI provider switching is controlled via `.env`
-* Development without API cost:
+* SQLite stores all users, projects & sections locally (`app.db`).
+* AI text generation handled via `llm_client.py`.
+* You can test without spending API credits using:
 
-  ```
-  LLM_PROVIDER=mock
-  ```
+```
+LLM_PROVIDER=mock
+```
 
 ---
 
-## 🔮 Future Enhancements (Optional)
+## 🔮 Future Scope
 
-* AI-generated images inside PPT slides
-* Collaboration (multi-user editing)
-* Document themes / templates
+* Add AI-generated images inside PPT & Word
+* Multiple design themes/templates
+* Real-time collaboration
+* Version control system for edits
 
 ---
 
 ## 👤 Author
 
 Developed by **Anshika Srivastava**
-⭐ If this project inspires you, please **star the repository!**
+📌 GitHub Repo: [https://github.com/anshika0420/AI-Docs-Platform](https://github.com/anshika0420/AI-Docs-Platform)
+
+⭐ If you like this project, please consider giving the repository a **star**!
 
 ```
 
 ---
 
-If you want, I can also add:
-✔ badges (OpenAI / Gemini / FastAPI / React / License)  
-✔ deployment instructions (Render / Railway / Vercel)  
+This README includes:
+✔ all sections  
+✔ images embedded  
+✔ professional formatting  
+✔ ready to use on GitHub  
 
-Just tell me and I’ll update it. 🚀
+If you want badges (OpenAI, FastAPI, React, License) — I can generate those as well. 💙
 ```
