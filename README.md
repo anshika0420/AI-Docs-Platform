@@ -1,7 +1,3 @@
-Below is a **complete README.md — final polished version — ONLY THE CODE**
-(you can copy–paste directly into your GitHub README).
-
----
 
 ```markdown
 # 🧠 AI-Assisted Document Authoring & Generation Platform
